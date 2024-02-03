@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import MainPage from "./pages/MainPage/MainPage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import BookPage from "./pages/BookPage/BookPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main className="main">
           <Routes>
             <Route path="/" element={<MainPage/>} />
+            <Route path="/book" element={<BookPage/>} />
           </Routes>
         </main>
         <Footer/>
