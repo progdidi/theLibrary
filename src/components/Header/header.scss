@@ -1,0 +1,44 @@
+.header {
+    margin-bottom: 30px;
+    &__inner {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+        }
+
+        .menu {
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                &-item {
+                }
+                &-link {
+                }
+            }
+           
+        }
+        
+        .header__buttons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .search-btn {
+            }
+            .favs-btn {
+            }
+            .autorization {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                &__btn {
+                }
+            }
+            
+        }
+        
+    }
+    
+}
