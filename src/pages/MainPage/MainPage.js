@@ -1,7 +1,36 @@
 import './mainPage.scss';
 import example from '../../images/example.jpg';
 
+//components
+import BookItem from '../../components/BookItem/BookItem';
+
 const MainPage = () => {
+
+    const ExampleBooks = [
+        {
+            id: 1,
+            img: example,
+            title: 'Harry Potter',
+            author: 'J.K.Rowling',
+            rating: 5
+        },
+
+        {
+            id: 2,
+            img: example,
+            title: 'Harry Potter',
+            author: 'J.K.Rowling',
+            rating: 5
+        },
+
+        {
+            id: 3,
+            img: example,
+            title: 'Harry Potter',
+            author: 'J.K.Rowling',
+            rating: 5
+        }
+    ]
     return ( 
         <>
         <section className="promo">
@@ -16,6 +45,25 @@ const MainPage = () => {
                             <img src={example} alt="" className="promo__slider-img" />
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="choose">
+            <div className="container">
+                <div className="choose__title section__title">What to choose</div>
+                <div className="choose__items">
+                    {ExampleBooks.map((book) => {
+                        return (
+                            <BookItem 
+                                key={book.id}
+                                title={book.title}
+                                img={book.img}
+                                author={book.author}
+                                rating={book.rating}
+                            />
+                        )
+                    })}
                 </div>
             </div>
         </section>
