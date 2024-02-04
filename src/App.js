@@ -8,7 +8,7 @@ import BookPage from "./pages/BookPage/BookPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Header/>
         <main className="main">
