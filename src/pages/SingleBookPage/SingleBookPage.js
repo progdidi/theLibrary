@@ -1,7 +1,7 @@
-import './bookPage.scss';
+import './singleBookPage.scss';
 import exampleBooks from '../../helpers/exampleBooks';
 
-const BookPage = ({img, title, author, rating}) => {
+const SingleBookPage = ({img, title, author, rating}) => {
     return ( 
         <>
             <section className="book">
@@ -21,4 +21,4 @@ const BookPage = ({img, title, author, rating}) => {
      );
 }
  
-export default BookPage;
+export default SingleBookPage;
