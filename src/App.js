@@ -20,7 +20,7 @@ function App() {
           <main className="main">
             <Routes>
               <Route path="/" element={<MainPage/>} />
-              <Route path="/book" element={<SingleBookPage/>} />
+              <Route path="/book/:id" element={<SingleBookPage/>} />
               <Route path="/books" element={<BooksPage/>} />
             </Routes>
           </main>

@@ -3,6 +3,7 @@ import example from '../../images/example.jpg';
 
 //components
 import BookItem from '../../components/BookItem/BookItem';
+import SearchForm from '../../components/searchForm/SearchForm';
 
 const MainPage = () => {
 
@@ -53,6 +54,7 @@ const MainPage = () => {
         <section className="choose">
             <div className="container">
                 <div className="choose__title section__title">What to choose</div>
+                <SearchForm/>
                 <div className="choose__items">
                     {ExampleBooks.map((book) => {
                         return (

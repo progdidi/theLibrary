@@ -19,6 +19,31 @@ const AppProvider = ({children}) => {
             const data = await response.json();
             const {docs} = data;
             console.log(docs);
+
+            if(docs) {
+                const newBooks = docs.slice(0, 20).map((bookSingle) => {
+                    const {key, author_name, cover_i, title} = bookSingle;
+
+                    return {
+                        id: key,
+                        author: author_name,
+                        cover_id: cover_i,
+                        title: title
+                    }
+                });
+
+                setBooks(newBooks);
+
+                if(newBooks.length > 1) {
+                    setResultTitle("Your search Result")
+                } else {
+                    setResultTitle("No result")
+                }
+            } else {
+                setBooks([]);
+                setResultTitle("No result")
+            }
+            setLoading(false);
         } catch(error) {
             console.log(error);
             setLoading(false);
