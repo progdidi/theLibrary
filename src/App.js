@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import SingleBookPage from "./pages/SingleBookPage/SingleBookPage";
 import BooksPage from "./pages/BooksPage/BooksPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 
 
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<MainPage/>} />
               <Route path="/book/:id" element={<SingleBookPage/>} />
               <Route path="/books" element={<BooksPage/>} />
+              <Route path="/about" element={<AboutPage/>} />
             </Routes>
           </main>
           <Footer/>

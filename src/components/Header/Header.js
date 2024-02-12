@@ -1,6 +1,7 @@
 import './header.scss';
 import { NavLink } from 'react-router-dom';
 import SearchBtn from '../SearchBtn/SearchBtn';
+import fav from './fav.svg';
 
 const Header = () => {
     return ( 
@@ -15,7 +16,7 @@ const Header = () => {
                                 <NavLink to="/" className="menu__list-link">Home</NavLink>
                             </li>
                             <li className="menu__list-item">
-                                <NavLink to="/" className="menu__list-link">About</NavLink>
+                                <NavLink to="/about" className="menu__list-link">About</NavLink>
                             </li>
                             <li className="menu__list-item">
                                 <NavLink to="/books" className="menu__list-link">Books</NavLink>
@@ -25,7 +26,9 @@ const Header = () => {
 
                     <div className="header__buttons">
                         <SearchBtn/>
-                        <button className="favs-btn">fav</button>
+                        <button className="favs-btn">
+                            <img src={fav} alt="" className="favs-btn__img" />
+                        </button>
 
                         <div className="autorization">
                             <button className="autorization__btn">Log in</button>

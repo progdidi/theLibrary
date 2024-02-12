@@ -1,6 +1,7 @@
 import { useGlobalContext } from "../../context";
 import BookItem from "../../components/BookItem/BookItem";
 import Loader from '../../components/Loader/Loader';
+import './booksPage.scss';
 
 //https://covers.openlibrary.org/b/id/240727-S.jpg
 
@@ -18,28 +19,27 @@ const BooksPage = () => {
         }
     });
 
-    console.log(booksWithCovers);
-
     if(loading) return <Loader/>;
 
 
 
     return (
         <section className="books">
-            <h2>{resultTitle}</h2>
-            
-            {
-                booksWithCovers.slice(0, 30).map((item, index) => {
-                    return (
-                        <BookItem
-                            key={index}
-                            {...item}
-                        />
-                    )
-                })
-            }
+            <div className="container">
+                <div className="books__items">
+                    {
+                    booksWithCovers.slice(0, 30).map((item, index) => {
+                        return (
+                            <BookItem
+                                key={index}
+                                {...item}
+                            />
+                        )
+                    })
+                    }   
+                </div>
+            </div>
         </section>
-        
     )
 
 
