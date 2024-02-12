@@ -6,6 +6,14 @@ import { useEffect } from 'react';
 
 const SearchForm = () => {
 
+    // return ( 
+    //     <form action="" className="search-form" onSubmit={handleSubmit}>
+    //         <input type="text" className="search-form__input" ref={searchText}/>
+            
+    //         <button type='submit' className="search-form__btn main-btn" onClick={handleSubmit}>search</button>
+    //     </form>
+    //  );
+
     // const {setSearchTerm, setResultTitle} = useGlobalContext();
     // const searchText = useRef(null);
     // const navigate = useNavigate();
@@ -29,13 +37,7 @@ const SearchForm = () => {
     //     navigate("/book");
     // }
 
-    // return ( 
-    //     <form action="" className="search-form" onSubmit={handleSubmit}>
-    //         <input type="text" className="search-form__input" ref={searchText}/>
-            
-    //         <button type='submit' className="search-form__btn main-btn" onClick={handleSubmit}>search</button>
-    //     </form>
-    //  );
+    
 }
  
 export default SearchForm;
