@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/theLibrary/static/css/main.9b43eeac.css",
-    "main.js": "/theLibrary/static/js/main.630236b5.js",
+    "main.css": "/theLibrary/static/css/main.2965bfb9.css",
+    "main.js": "/theLibrary/static/js/main.a9403d53.js",
     "static/media/example.jpg": "/theLibrary/static/media/example.8f13040d88cd76f58983.jpg",
+    "static/media/about1.jpg": "/theLibrary/static/media/about1.02ad368da20afd9ab733.jpg",
+    "static/media/about2.jpg": "/theLibrary/static/media/about2.b12f15900a0259665233.jpg",
+    "static/media/instagram.svg": "/theLibrary/static/media/instagram.787b1447c6450bcdbb2fdcba9c894a7f.svg",
+    "static/media/github.svg": "/theLibrary/static/media/github.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
+    "static/media/linkedin.svg": "/theLibrary/static/media/linkedin.3cd755e2ab001c51453c0a60c73efee7.svg",
     "index.html": "/theLibrary/index.html",
     "static/media/fav.svg": "/theLibrary/static/media/fav.a568c231e9c3e248985e2a66d4ce50ea.svg",
+    "static/media/telegram.svg": "/theLibrary/static/media/telegram.1c0bac67c670d8dc303150bdbe7dba4d.svg",
     "static/media/search.svg": "/theLibrary/static/media/search.ec631aaf01aaad40327affa828322171.svg",
-    "main.9b43eeac.css.map": "/theLibrary/static/css/main.9b43eeac.css.map",
-    "main.630236b5.js.map": "/theLibrary/static/js/main.630236b5.js.map"
+    "main.2965bfb9.css.map": "/theLibrary/static/css/main.2965bfb9.css.map",
+    "main.a9403d53.js.map": "/theLibrary/static/js/main.a9403d53.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b43eeac.css",
-    "static/js/main.630236b5.js"
+    "static/css/main.2965bfb9.css",
+    "static/js/main.a9403d53.js"
   ]
 }
