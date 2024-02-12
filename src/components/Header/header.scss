@@ -1,11 +1,14 @@
 .header {
     margin-bottom: 30px;
+    background-color: var(--dark-color);
     &__inner {
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .logo {
+            font-size: 35px;
+            font-weight: 700;
         }
 
         .menu {
@@ -16,6 +19,12 @@
                 &-item {
                 }
                 &-link {
+                    border-bottom: 1px solid transparent;
+                    transition: all 0.5s;
+                    &:hover {
+                        border-bottom: 1px solid #fff;
+                        font-weight: 600;
+                    }
                 }
             }
            
@@ -36,6 +45,13 @@
                 align-items: center;
                 gap: 20px;
                 &__btn {
+                    padding: 10px 15px;
+                    transition: all 0.3s;
+                    &:hover {
+                        background-color: #fff;
+                        border-radius: 100px;
+                        color: var(--main-color);
+                    }
                 }
             }
             

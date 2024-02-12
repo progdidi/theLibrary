@@ -6,13 +6,15 @@ import { useEffect } from 'react';
 
 const SearchForm = () => {
 
-    // return ( 
-    //     <form action="" className="search-form" onSubmit={handleSubmit}>
-    //         <input type="text" className="search-form__input" ref={searchText}/>
+
+
+    return ( 
+        <form action="" className="search-form">
+            <input type="text" className="search-form__input" placeholder='search a book...'/>
             
-    //         <button type='submit' className="search-form__btn main-btn" onClick={handleSubmit}>search</button>
-    //     </form>
-    //  );
+            <button type='submit' className="search-form__btn main-btn">search</button>
+        </form>
+     );
 
     // const {setSearchTerm, setResultTitle} = useGlobalContext();
     // const searchText = useRef(null);

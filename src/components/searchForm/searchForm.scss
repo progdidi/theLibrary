@@ -1,11 +1,37 @@
 .search-form {
+    padding: 15px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
     margin-bottom: 50px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    
     &__input {
-
+        width: 80%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
     }
 
 
-    &__button {
+    &__btn {
+        position: absolute;
+        z-index: 10;
+        display: inline-block;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5px;
+        border-radius: 20px;
+        padding: 10px 15px;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
         
     }
 }

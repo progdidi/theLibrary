@@ -9,6 +9,7 @@
         transition: all 0.3s;
         background-color: transparent;
         color: #fff;
+        border: none;
         &.show {
             width: 100px;
             border: 1px solid rgba(255, 255, 255, 0.4);

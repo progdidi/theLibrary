@@ -51,10 +51,20 @@ const MainPage = () => {
             </div>
         </section>
 
+        <section className="search">
+            <div className="container">
+                <div className="search__inner">
+                     <SearchForm/>
+                </div>
+            </div>
+        </section>
+
+        
+
         <section className="choose">
             <div className="container">
                 <div className="choose__title section__title">What to choose</div>
-                <SearchForm/>
+               
                 <div className="choose__items">
                     {ExampleBooks.map((book) => {
                         return (
